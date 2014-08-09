@@ -1,5 +1,5 @@
 from time import *
-from Tkinter import *
+from tkinter import *
 window = Tk()
 window.title("Alien")
 c = Canvas(window, height=300, width=400)
@@ -29,6 +29,10 @@ def steal_hat():
 def burp(event):
     mouth_open()
     c.itemconfig(words, text='Burp!')
+def unburp(event):
+    mouth_close()
+    c.itemconfig(words, text="I am an Alien!")
+c.bind_all('<KeyPress-b>', unburp)
 c.bind_all('<Button-1>', burp)
 c.bind_all('<KeyPress-a>', blink)
 c.bind_all('<KeyPress-z>', unblink)

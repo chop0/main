@@ -58,7 +58,7 @@ c.bind_all('<KeyPress-a>', blink)
 c.bind_all('<KeyPress-z>', unblink)
 
 # Eye control function
-def eye_control(event):
+def eye_control(event):    # Parameter for events
     key = event.keysym
     if key == "Up":
         c.move(eyeball, 0, -1)

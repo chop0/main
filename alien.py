@@ -1,6 +1,9 @@
 # Import required modules
 from time import *
-from tkinter import *
+try:
+    from tkinter import *
+exept:
+    from Tkinter import *
 
 # Initialise the window
 window = Tk()

@@ -114,7 +114,7 @@ import Tkinter as t
 from subprocess import call
 window = t.Tk()
 def callback():
-    call("/bin/shutdown")
+    call("./shutdown")
 b = t.Button(window, text="Shutdown", command=callback)
 b.pack()
 t.mainloop()
